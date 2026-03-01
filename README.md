@@ -58,6 +58,31 @@ Setelah dibuat, cuss kita langsung upload ke 2 file tersebut.
 
 Kita upload file .htaccess terlebih dahulu
 
+Setelah upload sukses, ayo kita upload file shell.jpg nya
+
+![ss](https://github.com/Naendratama/byp4ss3d-Write-Up/blob/main/Screenshot%202026-03-01%20143253.png)
+
+Setelah sukses, kita click shell.jpg nya yangg berwarna biru
+
+![ss](https://github.com/Naendratama/byp4ss3d-Write-Up/blob/main/Screenshot%202026-03-01%20143313.png)
+
+Terlihat belum ada keberadaan dari flagnya, ayo coba kita cari dengan menambahkan:
+    
+    ?cmd=find%20/%20-name%20%22flag*%22%202%3E/dev/null
+
+![ss](https://github.com/Naendratama/byp4ss3d-Write-Up/blob/main/Screenshot%202026-03-01%20143345.png)
+
+Terlihat terdapat flag.txt di direktori /var/www/flag.txt 
+
+Ayo kita menuju direktori tersebut, ganti command find tersebut, dengann:
+
+    ?cmd=cat /var/www/flag.txt
+
+![ss](https://github.com/Naendratama/byp4ss3d-Write-Up/blob/main/Screenshot%202026-03-01%20143450.png)
+
+Voila flag telah ditemukann!
+
+Flag:picoCTF{s3rv3r_byp4ss_77c49c68}
 
        
        
